@@ -52,3 +52,6 @@ production:
   database: protospace_37507_production
   username: protospace_37507
   password: <%= ENV['PROTOSPACE_37507_DATABASE_PASSWORD'] %>
+  adapter: mysql2
+  encoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
